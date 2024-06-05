@@ -30,7 +30,7 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 :v: If you have a keen interest in forensic pathology and wish to contribute to this field, whether it be through data provision, inquiries about algorithm implementation, innovative suggestions, or a desire for comprehensive communication and collaboration, we encourage you to contact us. We eagerly anticipate engaging in discussions with you!:laughing: :laughing: :laughing:
 
-* **Zhenyuan Wang**  Xi'an Jiaotong University School of Forensic Medicine  Email: wzy218@xjtu.edu.cn
+* **Zhenyuan Wang**  Key Laboratory of National Ministry of Health for Forensic Sciences, School of Medicine \& Forensics, Health Science Center,Xi’an Jiaotong University  Email: wzy218@xjtu.edu.cn
 * **Chunfeng Lian** School of Mathematics and Statistics, Xi'an Jiaotong University  Email: chunfeng.lian@xjtu.edu.cn
 ## Citation
 
