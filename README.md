@@ -40,6 +40,8 @@ Here we give an example.
 python patch_tmp.py
 ```
 ```bash
+This will split each WSI at the specifwied magnification by looping through it, while the JSON file in this is an annotation file (containing the 4 coordinates of the annotation box).
+Finally, we will get the patch-level datasets!
 patch_datasets/
   ├── slide_1/
     ├── slide_1-0_1_.png
