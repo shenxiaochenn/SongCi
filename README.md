@@ -35,6 +35,10 @@ datasets/
   └── ...
 
 ```
+Here we give an example.
+```bash
+python patch_tmp.py
+```
 
 
 ##  train of prototypical WSI encoder
