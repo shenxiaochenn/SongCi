@@ -29,11 +29,18 @@ pip
 ANACONDA
 ```
 
+
 After activating the virtual environment, you can install specific package requirements as follows:
 ```python
 pip install -r requirements.txt
 ```
 
+**Optional**: Conda Environment Setup For those who prefer using Conda:
+```bash
+conda create --name songci python=3.9.7
+conda activate songci
+
+```
 
 ## WSI preprocessing and the content of text(gross key findings & forensic pathology diagnosis)
 
