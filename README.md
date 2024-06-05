@@ -26,7 +26,7 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 **NOTE**: In practical scenarios, a single slide can encompass a variety of tissue types. To reduce the labeling time required by forensic scientists, we have adopted a straightforward approach by delineating the area with a simple rectangular boundary. Conversely, regions comprising a single tissue type are segmented without the need for explicit labeling.
 
 ```bash
-datasets/
+svs_datasets/
   ├── slide_1.svs
   ├── slide_2.svs
   ├── slide_3.svs
@@ -39,7 +39,23 @@ Here we give an example.
 ```bash
 python patch_tmp.py
 ```
+```bash
+patch_datasets/
+  ├── slide_1/
+    ├── slide_1-0_1_.png
+    ├── slide_1-0_2_.png
+    ├── slide_1-0_3_.png
+    └── ...
+  ├── slide_2/
+    ├── slide_2-0_1_.png
+    ├── slide_2-0_2_.png
+    ├── slide_2-0_3_.png
+    └── ...
+  ├── slide_3/
+  ├── slide_4/
+  └── ...
 
+```
 
 ##  train of prototypical WSI encoder
 
