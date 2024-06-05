@@ -98,14 +98,25 @@ If you implement prototype-based generation, use the `patch_generation/guided_di
 If you implement instance-based generation, use the `patch_generation/guided_diffusion/get_sl_models.py` file.
 
 default: prototype-based
-
+**train**
 IN the `patch_generation` folder, just run:
 ```bash
 sh train.sh 
 ```
+**sampling**:
+
+* prototype-based : the default loop iterates over all prototypes
+
+```bash
+sh sample_prototype.sh
+```
+
+* instance-based: choose the instance what you like 
 
 
-
+```bash
+sh sample.sh
+```
 
 ## Connection
 
