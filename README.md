@@ -93,6 +93,18 @@ results:
 ```
 ###   WSI patch generator both prototype-based & instance-based
 
+If you implement prototype-based generation, use the `patch_generation/guided_diffusion/get_ssl_models.py` file.
+
+If you implement instance-based generation, use the `patch_generation/guided_diffusion/get_sl_models.py` file.
+
+default: prototype-based
+
+IN the `patch_generation` folder, just run:
+```bash
+sh train.sh 
+```
+
+
 
 
 ## Connection
