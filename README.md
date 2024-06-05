@@ -100,7 +100,7 @@ slide_1  | The mucosa is smooth, complete and pink, there is no bleeding, ulcera
 slide_2  | There is a tear in the bottom of the heart, which leads inward to the left ventricle, the myocardium is dark red, and the coronary artery is stiff.  | Coronary atherosclerotic heart disease/Myocardial infarction with heart rupture/Pericardial tamponade
 slide_3  | The envelope of both kidneys is complete and easy to peel, the surface and section are brown red, and the boundary between skin and medulla is clear. | Renal autolysis/Congestion of kidney 
 
-##   prototypical WSI encoder
+##  prototypical contrastive learning
 
 * how to train the prototypical self-supervised contrastive learning?
   
