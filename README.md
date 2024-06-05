@@ -12,7 +12,7 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 <img src="docs/songci.png"  >
 
 ## Updates:
-
+* 05/06/2024: We are working on refining the code updates for the SongCi model.
 ## Installation:
 
 
