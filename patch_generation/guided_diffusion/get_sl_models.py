@@ -1,5 +1,4 @@
-# Copyright (c) Meta Platforms, Inc. All Rights Reserved.
-
+# generation based on instance
 import torch
 import torch.nn as nn
 from torchvision import models as torchvision_models
