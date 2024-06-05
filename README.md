@@ -91,6 +91,9 @@ results:
   ├── queue.pth
   └── ...
 ```
+###   WSI patch generator both prototype-based & instance-based
+
+
 
 ## Connection
 
@@ -103,6 +106,7 @@ results:
 ## Related Projects
 
 [dino](https://github.com/facebookresearch/dino)
+
 [guided-diffusion](https://github.com/openai/guided-diffusion)
 
 
