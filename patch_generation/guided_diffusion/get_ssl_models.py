@@ -1,3 +1,4 @@
+# generation based on prototype
 import torch
 import torch.nn as nn
 from guided_diffusion import vision_transformer as vits
