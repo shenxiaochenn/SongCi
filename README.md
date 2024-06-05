@@ -27,6 +27,8 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 ### WSI
 **NOTE**: In practical scenarios, a single slide can encompass a variety of tissue types. To reduce the labeling time required by forensic scientists, we have adopted a straightforward approach by delineating the area with a simple rectangular boundary. Conversely, regions comprising a single tissue type are segmented without the need for explicit labeling.
 
+If you use fp16 for training,  in our study, It's unstable.
+
 ```bash
 svs_datasets/
   ├── slide_1.svs
