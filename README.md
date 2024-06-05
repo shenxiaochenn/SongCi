@@ -28,6 +28,8 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 ## Connection
 
+If you have a keen interest in forensic pathology and wish to contribute to this field, whether it be through data provision, inquiries about algorithm implementation, innovative suggestions, or a desire for comprehensive communication and collaboration, we encourage you to contact us. We eagerly anticipate engaging in discussions with you!
+
 ## Citation
 
 ## Related Projects
