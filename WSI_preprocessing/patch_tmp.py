@@ -8,10 +8,10 @@ from mask_patch import wsi_patch_multi
 from tqdm import tqdm
 import os
 
-for i in tqdm(os.listdir("/mnt/data/shenxiaochen_data/institute_20/")):
+for i in tqdm(os.listdir("/mnt/data/shenxiaochen_data/datasets/")):
     if i.endswith("svs"):
         name = i[:-4]
-        if os.path.exists(f"/mnt/data/shenxiaochen_data/institute_20/{name}.json"):
+        if os.path.exists(f"/mnt/data/shenxiaochen_data/datasets/{name}.json"):
             print(name)
             path = wsi_patch_multi(filename=f"{name}.json",imgname=f"{name}.svs",patch_size=256,level=2)
         else:
