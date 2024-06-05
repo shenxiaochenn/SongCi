@@ -21,6 +21,19 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 * 05/06/2024: We are working on refining the code updates for the SongCi model.
 ## Installation:
 
+**Pre-requisites**:
+```bash
+python 3.9+
+CUDA 12.1
+pip
+ANACONDA
+```
+
+After activating the virtual environment, you can install specific package requirements as follows:
+```python
+pip install -r requirements.txt
+```
+
 
 ## WSI preprocessing and the content of text(gross key findings & forensic pathology diagnosis)
 
