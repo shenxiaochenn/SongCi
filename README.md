@@ -26,6 +26,8 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 ##  train of prototypical WSI encoder
 
+## Connection
+
 ## Citation
 
 ## Related Projects
