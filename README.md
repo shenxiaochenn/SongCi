@@ -146,6 +146,17 @@ sh sample_prototype.sh
 sh sample.sh
 ```
 
+###   WSI segmentaion
+
+## cross-modality contrastive learning
+
+train 
+
+inference 
+
+###  Multi-modality explainability
+
+
 ## Connection
 
 :v: If you have a keen interest in forensic pathology and wish to contribute to this field, whether it be through data provision, inquiries about algorithm implementation, innovative suggestions, or a desire for comprehensive communication and collaboration, we encourage you to contact us. We eagerly anticipate engaging in discussions with you!:laughing: :laughing: :laughing:
