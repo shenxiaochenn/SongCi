@@ -1,4 +1,4 @@
-宋慈 <img src="docs/songci.jpg" width="200px" align="right" />
+宋慈 <img src="docs/AI_songci.png" width="200px" align="right" />
 ===========
 中文 ｜ [英文](https://github.com/shenxiaochenn/SongCi/blob/master/README.md) 
 
