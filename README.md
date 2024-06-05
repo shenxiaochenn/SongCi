@@ -9,7 +9,12 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 ## Large-vocabulary forensic pathological analyses via prototypical cross-modal contrastive learning
 
-<img src="docs/songci.png"  >
+
+<div align=center>
+<img src="docs/songci.png" width="800px" />
+
+</div>
+
 
 ## Updates:
 * 05/06/2024: We are working on refining the code updates for the SongCi model.
