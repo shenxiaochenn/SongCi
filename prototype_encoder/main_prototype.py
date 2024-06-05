@@ -225,7 +225,7 @@ def train_dino(args):
         print(f"Unknow architecture: {args.arch}")
 
     # ------------------------------------pretrain model -----------------------------#
-    dino_state_dict = torch.load("./dino_deitsmall16_pretrain.pth")
+    dino_state_dict = torch.load("./dino_deitsmall16_pretrain.pth")# 预训练的模型
 
     student.load_state_dict(dino_state_dict)
 
@@ -330,7 +330,7 @@ def train_dino(args):
     start_epoch = to_restore["epoch"]
 
     start_time = time.time()
-    print("Starting DINO training !")
+    print("Starting WSI prototype encoder training !")
     for epoch in range(start_epoch, args.epochs):
         data_loader.sampler.set_epoch(epoch)
         # optionally starts a queue
