@@ -28,4 +28,6 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 ## Related Projects
 
+[dino](https://github.com/facebookresearch/dino)
+
 
