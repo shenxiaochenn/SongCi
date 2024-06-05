@@ -1,4 +1,4 @@
-SongCi:dragon_face: <img src="docs/AI_songci.png" width="200px" align="right" />
+SongCi :dragon_face: <img src="docs/AI_songci.png" width="200px" align="right" />
 ===========
 
 SongCi is a multi-modal deep learning model tailored for forensic pathological analyses.
