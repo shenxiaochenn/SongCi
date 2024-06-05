@@ -23,6 +23,8 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 
 ## WSI preprocessing and the content of text(gross key findings & forensic pathology diagnosis)
+
+### WSI
 **NOTE**: In practical scenarios, a single slide can encompass a variety of tissue types. To reduce the labeling time required by forensic scientists, we have adopted a straightforward approach by delineating the area with a simple rectangular boundary. Conversely, regions comprising a single tissue type are segmented without the need for explicit labeling.
 
 ```bash
@@ -60,6 +62,13 @@ patch_datasets/
   └── ...
 
 ```
+### gross key findings & forensic pathology diagnosis
+
+We provide sample text here in one of our cohorts.
+```bash
+text_xianjiaotong.csv
+```
+
 
 ##  train of prototypical WSI encoder
 
