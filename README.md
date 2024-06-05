@@ -39,7 +39,9 @@ pip install -r requirements.txt
 ```bash
 conda create --name songci python=3.9.7
 conda activate songci
-
+git clone https://github.com/shenxiaochenn/SongCi.git
+cd SongCi
+pip install -r requirements.txt
 ```
 
 ## WSI preprocessing and the content of text(gross key findings & forensic pathology diagnosis)
