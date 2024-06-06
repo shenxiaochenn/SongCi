@@ -148,6 +148,12 @@ sh sample.sh
 
 ###   WSI segmentaion
 
+patch_name   | WSI_name | x_axis | y_axis |pro_index | sim_value
+-------- | ----- | -----| ----- | -----| ----- 
+patch_1  | WSI_1 | 0| 0 | 2| 0.9623
+patch_2  | WSI_1 | 1| 0 | 56| 0.8958
+patch_3  | WSI_1 | 1| 2 | 3| 0.9703
+
 ## cross-modality contrastive learning
 
 train 
