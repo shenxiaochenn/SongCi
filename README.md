@@ -171,11 +171,18 @@ python wsi_seg/wsi_seg_prototype.py
 
 ## cross-modality contrastive learning
 
-train 
+how to train the modality fusion block
+ 
+* train 
 ```bash
 python main_fusion.py  --data_path xxx  --depth 2 --checkpoint xxx(prototype-encoder) --output_dir xxx --gate True --noise_ratio 0.5 --saveckp_freq 100 --warmup_epochs 50
 ```
-inference 
+At the inferrence time, a `csv` file will be returned containing the  forensic diagnostic results predicted by the model for the samples provided.
+
+* inference 
+```bash
+python score_modality.py  --checkpoint xxx(prototype-encoder)  --fusion_checkpoint xxx(fusion block)   --data_path xxx --threshold 0.88  --out_name xx
+```
 
 ###  Multi-modality explainability
 
