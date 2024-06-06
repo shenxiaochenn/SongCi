@@ -148,13 +148,21 @@ sh sample.sh
 
 ###   WSI segmentaion
 
-First we convert each WSI into a table. In the tabel, we are able to know which archetype each patch belongs to, the exact value of similarity and the coordinates of this patch in the WSI.
+First we convert each WSI into a table. In the tabel, we are able to know which prototype each patch belongs to, the exact value of similarity and the coordinates of this patch in the WSI.
+
+For example:
 
 patch_name   | WSI_name | x_axis | y_axis |pro_index | sim_value
 -------- | ----- | -----| ----- | -----| ----- 
 patch_1  | WSI_1 | 0| 0 | 2| 0.9623
 patch_2  | WSI_1 | 1| 0 | 56| 0.8958
 patch_3  | WSI_1 | 1| 2 | 3| 0.9703
+
+then just run,  and you will get the final  segmentation results
+
+```bash
+python wsi_seg/wsi_seg_prototype.py
+```
 
 ## cross-modality contrastive learning
 
