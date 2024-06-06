@@ -148,6 +148,8 @@ sh sample.sh
 
 ###   WSI segmentaion
 
+First we convert each WSI into a table. In the tabel, we are able to know which archetype each patch belongs to, the exact value of similarity and the coordinates of this patch in the WSI.
+
 patch_name   | WSI_name | x_axis | y_axis |pro_index | sim_value
 -------- | ----- | -----| ----- | -----| ----- 
 patch_1  | WSI_1 | 0| 0 | 2| 0.9623
