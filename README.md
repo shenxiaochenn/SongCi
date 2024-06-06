@@ -177,6 +177,11 @@ inference
 
 ###  Multi-modality explainability
 
+<div align=center>
+<img src="docs/explain.png" width="600px" />
+  
+ **Multi-modality attention visualization of SongCi**
+</div>
 
 ## Connection
 
