@@ -195,7 +195,9 @@ We will count the scores for each prototype and each word and turn them into a t
  WSI_3 | Gastrointestinal tissue autolysis| {prototype:score} | {word:score} 
 
 ```bash
+python visual_modality_index.py
 ```
+Examples: here we show the top 5 prototypes and top 5 words
 
 <div align=center>
 <img src="docs/explain.png" width="600px" />
