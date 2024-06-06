@@ -13,11 +13,11 @@
  ### The framework of SongCi and studied large-vocabulary, multi-center datasets.
 </div>
 
-## Updates:
-* 05/06/2024: We are working on refining the code updates for the SongCi model.
-## Installation:
+## 更新:
+* 05/06/2024: 我们正在更新代码的内容。
+## 安装:
 
-**Pre-requisites**:
+**前提须知**:
 ```bash
 python 3.9+
 CUDA 12.1
@@ -26,12 +26,12 @@ ANACONDA
 ```
 
 
-After activating the virtual environment, you can install specific package requirements as follows:
+激活虚拟环境后，您可以安装特定的软件包需求，具体如下:
 ```python
 pip install -r requirements.txt
 ```
 
-**Optional**: Conda Environment Setup For those who prefer using Conda:
+**可选的**: Conda 环境设置 对于喜欢使用 Conda 的用户:
 ```bash
 conda create --name songci python=3.9.7
 conda activate songci
@@ -40,11 +40,10 @@ cd SongCi
 pip install -r requirements.txt
 ```
 
-## WSI preprocessing and the content of text(gross key findings & forensic pathology diagnosis)
+## WSI 预处理和文本内容（解剖重要发现和法医病理诊断）
 
 ### WSI
-**NOTE**: In practical scenarios, a single slide can encompass a variety of tissue types. To reduce the labeling time required by forensic scientists, we have adopted a straightforward approach by delineating the area with a simple rectangular boundary. Conversely, regions comprising a single tissue type are segmented without the need for explicit labeling.
-
+**注意**:  在实际应用中，一张载玻片可能包含多种组织类型。为了减少法医所需的标记时间，我们采用了一种简单的方法，即用简单的矩形边界来划分区域。反之，包含单一组织类型的区域则无需明确标记即可分割。
 
 ```bash
 svs_datasets/
@@ -56,13 +55,13 @@ svs_datasets/
   └── ...
 
 ```
-Here we give an example.
+这里我们提供一个示例代码
 ```bash
 python patch_tmp.py
 ```
 
-This will split each WSI at the specifwied magnification by looping through it, while the **JSON** file in this is an annotation file (containing the 4 coordinates of the annotation box).
-Finally, we will get the patch-level datasets!
+这将以指定的放大倍数循环分割每个 WSI，而其中的**JSON**文件是一个注释文件（包含注释框的 4 个坐标）。
+最后，我们将得到补丁级数据集！
 
 ```bash
 patch_datasets/
@@ -81,11 +80,11 @@ patch_datasets/
   └── ...
 
 ```
-### gross key findings & forensic pathology diagnosis
+### 大体解剖发现 & 法医病理学诊断
 
-We provide sample text here in one of our cohorts.
+我们在此提供了其中一个队列样本文本。
 
-The gross key finding is a paragraph  and forensic pathology diagnosis are text segments delineated by `/`.
+大体解剖发现是一个段落，法医病理诊断是以 `/` 划分的文本段。
 
 ```bash
 text_xianjiaotong.csv
@@ -96,15 +95,15 @@ slide_1  | The mucosa is smooth, complete and pink, there is no bleeding, ulcera
 slide_2  | There is a tear in the bottom of the heart, which leads inward to the left ventricle, the myocardium is dark red, and the coronary artery is stiff.  | Coronary atherosclerotic heart disease/Myocardial infarction with heart rupture/Pericardial tamponade
 slide_3  | The envelope of both kidneys is complete and easy to peel, the surface and section are brown red, and the boundary between skin and medulla is clear. | Renal autolysis/Congestion of kidney 
 
-##  prototypical contrastive learning
+##  原型对比学习
 
-* how to train the prototypical self-supervised contrastive learning?
+* 怎样去训练一个原型对比学习网络？
   
-**NOTE**: In our study, the CUDA version is 12.1 and python is 3.9. The computational experiments should be conducted on a system equipped with a minimum of eight NVIDIA GeForce RTX 3090 graphics cards. If you use fp16 for training,  in our study, it's unstable.
+**注意**: 在我们的研究中，CUDA 版本为 12.1，python 版本为 3.9。计算实验应在至少配备八块英伟达™（NVIDIA®）GeForce RTX 3090 显卡的系统上进行。如果使用 fp16 进行训练，在我们的研究中，它是不稳定的。
 ```python
 python -m torch.distributed.launch --nproc_per_node=8  prototype_encoder/main_prototype.py   --use_bn_in_head True  --use_pre_in_head True  --use_fp16 False  --batch_size_per_gpu 96 --data_path /path/to/WSI_patch/train --output_dir /path/to/saving_dir
 ```
-results:
+结果:
 ```bash
 /path/to/saving_dir/
   ├──  log.txt 
@@ -112,30 +111,30 @@ results:
   ├── queue.pth
   └── ...
 ```
-###   WSI patch generator both prototype-based & instance-based
+###  基于原型和实例的 WSI 补丁生成器
 
-If you implement prototype-based generation, use the `patch_generation/guided_diffusion/get_ssl_models.py` file.
+如果执行基于原型的生成，请使用 `patch_generation/guided_diffusion/get_ssl_models.py` 文件。
 
-If you implement instance-based generation, use the `patch_generation/guided_diffusion/get_sl_models.py` file.
+如果执行基于实例的生成，请使用 `patch_generation/guided_diffusion/get_sl_models.py` 文件。
 
-default: prototype-based
+默认：基于原型
 
-**train**
+**训练**
 
-IN the `patch_generation` folder, just run:
+在 `patch_generation` 文件夹中运行即可：
 
 ```bash
 sh train.sh 
 ```
-**sampling**:
+**采样**:
 
-* prototype-based : the default loop iterates over all prototypes
+* 基于原型：默认循环遍历所有原型
 
 ```bash
 sh sample_prototype.sh
 ```
 
-* instance-based: choose the instance what you like 
+* 基于实例：选择您喜欢的实例 
 
 
 ```bash
