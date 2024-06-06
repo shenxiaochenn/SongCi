@@ -150,6 +150,11 @@ sh sample.sh
 
 First we convert each WSI into a table. In the tabel, we are able to know which prototype each patch belongs to, the exact value of similarity and the coordinates of this patch in the WSI.
 
+```bash
+python wsi_seg/prototype_index.py
+```
+you will get the  WSI table.
+
 For example:
 
 patch_name   | WSI_name | x_axis | y_axis |pro_index | sim_value
