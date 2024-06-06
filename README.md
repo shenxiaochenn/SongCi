@@ -194,6 +194,7 @@ We will count the scores for each prototype and each word and turn them into a t
  WSI_2 | Gastrointestinal congestion| {prototype:score} | {word:score} 
  WSI_3 | Gastrointestinal tissue autolysis| {prototype:score} | {word:score} 
 
+* For a list of samples ~
 ```bash
 python visual_modality_index.py
 ```
