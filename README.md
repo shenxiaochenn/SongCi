@@ -192,4 +192,4 @@ inference
 
 [guided-diffusion](https://github.com/openai/guided-diffusion)
 
-
+[flamingo](https://github.com/lucidrains/flamingo-pytorch)
