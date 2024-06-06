@@ -172,7 +172,9 @@ python wsi_seg/wsi_seg_prototype.py
 ## cross-modality contrastive learning
 
 train 
-
+```bash
+python main_fusion.py  --data_path xxx  --depth 2 --checkpoint xxx(prototype-encoder) --output_dir xxx --gate True --noise_ratio 0.5 --saveckp_freq 100 --warmup_epochs 50
+```
 inference 
 
 ###  Multi-modality explainability
