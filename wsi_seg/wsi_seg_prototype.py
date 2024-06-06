@@ -9,7 +9,7 @@ from sklearn.cluster import KMeans
 from tqdm import tqdm
 #colors_nn =[[0,0,128],[144,190,224],[230,241,243],[255,223,146],[244,111,68],[255,182,193],[219,49,36],[138,43,226]]# 浅蓝色 淡白色 淡黄色 橙红色 粉色 深红色 紫色
 #[152,251,152]白绿
-colors_nn =[[0,0,128],[244,111,68],[255,223,146],[255,182,193],[144,190,224],[230,241,243],[152,251,152],[219,49,36]]
+colors_nn =[[0,0,128],[244,111,68],[255,223,146],[255,182,193],[144,190,224],[230,241,243],[152,251,152],[219,49,36]] # 将每个WSI分成7类。类别数量可调整！
 
 def label2color(img,colors):
     img_height, img_width = img.shape
@@ -24,7 +24,7 @@ def label2color(img,colors):
 level_3090 = pd.read_csv("/home/wangzhenyuan/pathology/path_wsi/wsi_level_3090.csv",index_col=0)
 level_4090 = pd.read_csv("/home/wangzhenyuan/pathology/path_wsi/wsi_level_4090.csv",index_col=0)
 level_ins = pd.read_csv("/home/wangzhenyuan/pathology/path_wsi/wsi_level_ins.csv",index_col=0)
-prototype = np.load("../multi_modality/prototype_220.npy")
+prototype = np.load("../multi_modality/prototype_220.npy") # the prototype matrix !
 
 for svs in os.listdir("/home/wangzhenyuan/pathology/path_wsi/ori_image_3090/"):
     name = svs[:-8]
