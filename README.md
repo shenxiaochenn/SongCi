@@ -184,6 +184,7 @@ inference
 
 * **Zhenyuan Wang**  Key Laboratory of National Ministry of Health for Forensic Sciences, School of Medicine \& Forensics, Health Science Center,Xi’an Jiaotong University  Email: wzy218@xjtu.edu.cn
 * **Chunfeng Lian** School of Mathematics and Statistics, Xi'an Jiaotong University  Email: chunfeng.lian@xjtu.edu.cn
+*  **Chen Shen** Xi'an Jiaotong University   Email: shenxiaochen@stu.xjtu.edu.cn
 ## Citation
 
 ## Related Projects
