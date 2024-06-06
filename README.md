@@ -186,6 +186,17 @@ python score_modality.py  --checkpoint xxx(prototype-encoder)  --fusion_checkpoi
 
 ###  Multi-modality explainability
 
+We will count the scores for each prototype and each word and turn them into a table.
+
+ WSI_name | disease | img_dict |text_dict 
+ ----- | -----| ----- | -----
+ WSI_1 | The hemorrhage under the scalp| {prototype:score} |  {word:score} 
+ WSI_2 | Gastrointestinal congestion| {prototype:score} | {word:score} 
+ WSI_3 | Gastrointestinal tissue autolysis| {prototype:score} | {word:score} 
+
+```bash
+```
+
 <div align=center>
 <img src="docs/explain.png" width="600px" />
   
