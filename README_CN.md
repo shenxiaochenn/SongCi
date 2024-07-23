@@ -209,7 +209,19 @@ python visual_modality_index.py
 * **练春峰** 西安交通大学 数学与统计学院  Email: chunfeng.lian@xjtu.edu.cn
 *  **申忱** 西安交通大学   Email: shenxiaochen@stu.xjtu.edu.cn
 ## 引用
+如果您发现 SongCi 对您的研究和应用有用，请使用此 BibTeX 引用：
 
+```bibtex
+@misc{shen2024largevocabularyforensicpathologicalanalyses,
+      title={Large-vocabulary forensic pathological analyses via prototypical cross-modal contrastive learning}, 
+      author={Chen Shen and Chunfeng Lian and Wanqing Zhang and Fan Wang and Jianhua Zhang and Shuanliang Fan and Xin Wei and Gongji Wang and Kehan Li and Hongshu Mu and Hao Wu and Xinggong Liang and Jianhua Ma and Zhenyuan Wang},
+      year={2024},
+      eprint={2407.14904},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2407.14904}, 
+}
+```
 ## 相关项目
 
 [dino](https://github.com/facebookresearch/dino)
