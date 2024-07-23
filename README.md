@@ -214,7 +214,19 @@ Examples: here we show the top 5 prototypes and top 5 words
 * **Chunfeng Lian** School of Mathematics and Statistics, Xi'an Jiaotong University  Email: chunfeng.lian@xjtu.edu.cn
 *  **Chen Shen** Xi'an Jiaotong University   Email: shenxiaochen@stu.xjtu.edu.cn
 ## Citation
+If you find SongCi useful for your your research and applications, please cite using this BibTeX:
 
+```bibtex
+@misc{shen2024largevocabularyforensicpathologicalanalyses,
+      title={Large-vocabulary forensic pathological analyses via prototypical cross-modal contrastive learning}, 
+      author={Chen Shen and Chunfeng Lian and Wanqing Zhang and Fan Wang and Jianhua Zhang and Shuanliang Fan and Xin Wei and Gongji Wang and Kehan Li and Hongshu Mu and Hao Wu and Xinggong Liang and Jianhua Ma and Zhenyuan Wang},
+      year={2024},
+      eprint={2407.14904},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2407.14904}, 
+}
+```
 ## Related Projects
 
 [dino](https://github.com/facebookresearch/dino)
