@@ -4,7 +4,7 @@ from torch import nn
 from transformers import  CLIPModel
 
 def model_fusion(depth=2,noise_ratio=0.5, gate=True,num_em=True):
-    prototype_all = torch.load("songci_prototype.pt",map_location="cuda")
+    prototype_all = torch.load("songci_prototype.pt",map_location="cuda") # from patch-level pretraining and have already padding !
     disease_model = CLIPModel.from_pretrained("vinid/plip")
     disease_model.eval()
 
