@@ -104,7 +104,9 @@ slide_3  | The envelope of both kidneys is complete and easy to peel, the surfac
 
 * how to train the prototypical self-supervised contrastive learning?
   
-**NOTE**: In our study, the CUDA version is 12.1 and python is 3.9. The computational experiments should be conducted on a system equipped with a minimum of eight NVIDIA GeForce RTX 3090 graphics cards. If you use fp16 for training,  in our study, it's unstable.
+**NOTE**: In our study, the CUDA version is 12.1 and python is 3.9. The computational experiments should be conducted on a system equipped with a minimum of eight NVIDIA GeForce RTX 3090 graphics cards. If you use fp16 for training,  in our study, it's unstable. 
+
+Here we use 3149743 high-level patches to train the encoder , it needs almost 2 weeks - 3 weeks.
 ```python
 python -m torch.distributed.launch --nproc_per_node=8  prototype_encoder/main_prototype.py   --use_bn_in_head True  --use_pre_in_head True  --use_fp16 False  --batch_size_per_gpu 96 --data_path /path/to/WSI_patch/train --output_dir /path/to/saving_dir
 ```
@@ -125,6 +127,7 @@ If you implement instance-based generation, use the `patch_generation/guided_dif
 default: prototype-based
 
 **train**
+time : 4 cards  1 week !
 
 IN the `patch_generation` folder, just run:
 
@@ -173,7 +176,11 @@ python wsi_seg/wsi_seg_prototype.py
 
 how to train the modality fusion block
  
-* train 
+* train
+
+time : 1 card 1 -2 days ! 
+
+
 ```bash
 python main_fusion.py  --data_path xxx  --depth 2 --checkpoint xxx(prototype-encoder) --output_dir xxx --gate True --noise_ratio 0.5 --saveckp_freq 100 --warmup_epochs 50
 ```
