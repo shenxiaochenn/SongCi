@@ -127,7 +127,8 @@ If you implement instance-based generation, use the `patch_generation/guided_dif
 default: prototype-based
 
 **train**
-time : 4 cards  1 week !
+
+time : 4 gpu cards  1 week !
 
 IN the `patch_generation` folder, just run:
 
@@ -178,7 +179,7 @@ how to train the modality fusion block
  
 * train
 
-time : 1 card 1 -2 days ! 
+time : 1 gpu card 1 -2 days ! 
 
 
 ```bash
