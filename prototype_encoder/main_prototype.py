@@ -281,10 +281,10 @@ def train_dino(args):
         args.epochs,
     ).cuda()
 
-    # =================== freeze backbone ====================================
-    for pp in [student.module.backbone.patch_embed, student.module.backbone.blocks[0:6]]:
-        for param in pp.parameters():
-            param.requires_grad = False
+    # =================== freeze backbone if you do not have enough  gpu====================================
+    #for pp in [student.module.backbone.patch_embed, student.module.backbone.blocks[0:6]]:
+    #    for param in pp.parameters():
+    #        param.requires_grad = False
 
     # ============ preparing optimizer ... ============
     params_groups = utils.get_params_groups(student)
@@ -347,12 +347,12 @@ def train_dino(args):
             epoch, fp16_scaler, queue, args)
 
         # ================== check freeze backbone ... ============================
-        model_state_dict = student.module.state_dict()
-        for k in model_state_dict:
-            if k.startswith("backbone.blocks.3.attn.qkv.weight"):
-                print("true start check!")
-                assert torch.equal(dino_state_dict["blocks.3.attn.qkv.weight"].cpu(),
-                                   model_state_dict[k].cpu()), "wrong1"
+        #model_state_dict = student.module.state_dict()
+        #for k in model_state_dict:
+        #    if k.startswith("backbone.blocks.3.attn.qkv.weight"):
+        #        print("true start check!")
+        #        assert torch.equal(dino_state_dict["blocks.3.attn.qkv.weight"].cpu(),
+        #                           model_state_dict[k].cpu()), "wrong1"
 
         # ============ writing logs ... ============
         save_dict = {
