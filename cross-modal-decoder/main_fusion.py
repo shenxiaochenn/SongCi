@@ -84,7 +84,7 @@ def train_fusion(args):
         prototypes = student.prototypes.weight
         p = torch.zeros(prototypes.shape[1])
         p = p.unsqueeze(0)
-        prototype_all = torch.cat((prototypes, p), 0).cuda()
+        prototype_all = torch.cat((prototypes, p), 0).cuda() # 这里的0是用来做padding的！The 0 here are used for padding!
 
 
     disease_model = CLIPModel.from_pretrained("vinid/plip")
