@@ -92,7 +92,7 @@ We provide sample text here in one of our cohorts.
 The gross key finding is a paragraph  and forensic pathology diagnosis are text segments delineated by `/`.
 
 ```bash
-text_xianjiaotong.csv
+text_xianjiaotong.csv # in the WSI_preprocessing folder
 ```
 slide_name    | gross key findings | forensic pathology diagnosis
 -------- | ----- | -----
