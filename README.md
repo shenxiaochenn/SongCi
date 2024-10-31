@@ -19,7 +19,7 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 ## Updates:
 * 05/06/2024: We are working on refining the code updates for the SongCi model.
-* 28/10/2024： We’ve included checkpoints for each section, which you can now access by simply requesting them from us. [Google Drive](https://drive.google.com/drive/folders/1L1ff_SJg7xCHlU2sxnx9tvAUbSkdigLG?usp=sharing)
+* 28/10/2024： We’ve included checkpoints for each section, which you can now access by simply requesting them from us. [Google Drive](https://drive.google.com/drive/folders/1L1ff_SJg7xCHlU2sxnx9tvAUbSkdigLG?usp=sharing) and [hugging face](https://huggingface.co/shenxiaochen/SongCi)
 ## Installation:
 
 **Pre-requisites**:
