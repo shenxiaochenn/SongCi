@@ -17,7 +17,7 @@ def model_fusion(depth=2,noise_ratio=0.5, gate=True,num_em=True):
 
     return model_fusion
 
-model = model_fusion()
+# model = model_fusion()
 
-model.load_state_dict(torch.load("fusion_checkpoint.pth",map_location="cpu"))
-print("finish!!!!")
+# model.load_state_dict(torch.load("fusion_checkpoint.pth",map_location="cpu"))
+# print("finish!!!!")
