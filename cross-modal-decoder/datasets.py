@@ -283,7 +283,7 @@ class Mydataset_clipp(data.Dataset):
 #             img = img[:self.img_length]
 #             img_num = img_num[:self.img_length]
 
-        return tokens_disease,tokens_description,img,img_num
+    #     return tokens_disease,tokens_description,img,img_num
 
-    def __len__(self):
-        return len(self.data)
+    # def __len__(self):
+    #     return len(self.data)
