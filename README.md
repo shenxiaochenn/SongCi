@@ -64,7 +64,7 @@ svs_datasets/
 ```
 Here we give an example.
 ```bash
-python patch_tmp.py
+python patch_tmp.py #https://github.com/shenxiaochenn/SongCi/blob/master/WSI_preprocessing/patch_tmp.py
 ```
 
 This will split each WSI at the specifwied magnification by looping through it, while the **JSON** file in this is an annotation file (containing the 4 coordinates of the annotation box).
