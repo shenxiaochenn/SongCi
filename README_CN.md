@@ -8,7 +8,7 @@
 ## 通过原型跨模态对比学习进行大词汇框的法医病理分析
 
 <div align=center>
-<img src="docs/songci.png" width="800px" />
+<img src="docs/demo.png" width="800px" />
   
  ### The framework of SongCi and studied large-vocabulary, multi-center datasets.
 </div>
