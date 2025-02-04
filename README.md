@@ -11,7 +11,7 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 
 <div align=center>
-<img src="docs/songci.png" width="800px" />
+<img src="docs/demo.png" width="800px" />
   
  ### The framework of SongCi and studied large-vocabulary, multi-center datasets.
 </div>
