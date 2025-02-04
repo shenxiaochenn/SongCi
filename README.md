@@ -19,7 +19,7 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 
 ## Updates:
 * 05/06/2024: We are working on refining the code updates for the SongCi model.
-* 28/10/2024： We’ve provide checkpoints for each section, which you can now access by simply requesting them from us [Google Drive](https://drive.google.com/drive/folders/1L1ff_SJg7xCHlU2sxnx9tvAUbSkdigLG?usp=sharing) and [hugging face](https://huggingface.co/shenxiaochen/SongCi) .
+* 28/10/2024： We’ve provide checkpoints for each section, which you can now access by simply requesting them from us [hugging face](https://huggingface.co/shenxiaochen/SongCi) .
 * 26/01/2025：quick start use this vision-language model for forensic pathology diagnosis. [Demo of how to use SongCi](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/multi_modality_diagnosis.ipynb) And how to get the prototype embedding of a WSI. [Demo of how to get the prototype of each WSI](https://github.com/shenxiaochenn/SongCi/blob/master/prototype_encoder/songci_demo/how%20to%20get%20prototype%20csv.ipynb). (Note: For safety! please get the checkpoint through the [hugging face](https://huggingface.co/shenxiaochen/SongCi) !!!)
 * 04/02/2025：We show the forensic pathology diagnostic results for each sample in the internal cohort, as well as the final numerical assessment results.[Reproduced results of Internal Cohort](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/Demo_of_the_internal_cohort(Xian%20Jiaotong).ipynb) and [Demo of how to use SongCi](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/multi_modality_diagnosis.ipynb)
 ## Installation:
