@@ -15,6 +15,9 @@
 
 ## 更新:
 * 05/06/2024: 我们正在更新代码的内容。
+* 28/10/2024： 我们为每个部分都提供了检查点，您现在只需向我们进行简单的申请即可访问这些检查点 [Google Drive](https://drive.google.com/drive/folders/1L1ff_SJg7xCHlU2sxnx9tvAUbSkdigLG?usp=sharing) 和 [hugging face](https://huggingface.co/shenxiaochen/SongCi) .
+* 26/01/2025：快速开始使用这一视觉语言模型进行法医病理诊断。 [Demo of how to use SongCi](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/multi_modality_diagnosis.ipynb) 以及如何获得 WSI 的嵌入原型。 [Demo of how to get the prototype of each WSI](https://github.com/shenxiaochenn/SongCi/blob/master/prototype_encoder/songci_demo/how%20to%20get%20prototype%20csv.ipynb). (注意：为了安全起见！请通过 [hugging face](https://huggingface.co/shenxiaochen/SongCi) !!!)
+* 04/02/2025：我们展示了内部队列中每个样本的法医病理诊断结果以及最终的数值评估结果。[Reproduced results of Internal Cohort](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/Demo_of_the_internal_cohort(Xian%20Jiaotong).ipynb) 和 [Demo of how to use SongCi](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/multi_modality_diagnosis.ipynb)
 ## 安装:
 
 **前提须知**:
