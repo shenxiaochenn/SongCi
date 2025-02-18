@@ -18,6 +18,7 @@
 * 28/10/2024： 我们为每个部分都提供了检查点，您现在只需向我们进行简单的申请即可访问这些检查点  [hugging face](https://huggingface.co/shenxiaochen/SongCi) .
 * 26/01/2025：快速开始使用这一视觉语言模型进行法医病理诊断。 [Demo of how to use SongCi](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/multi_modality_diagnosis.ipynb) 以及如何获得 WSI 的嵌入原型。 [Demo of how to get the prototype of each WSI](https://github.com/shenxiaochenn/SongCi/blob/master/prototype_encoder/songci_demo/how%20to%20get%20prototype%20csv.ipynb). (注意：为了安全起见！请通过 [hugging face](https://huggingface.co/shenxiaochen/SongCi) !!!)
 * 04/02/2025：我们展示了内部队列中每个样本的法医病理诊断结果以及最终的数值评估结果。[Reproduced results of Internal Cohort](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/Demo_of_the_internal_cohort(Xian%20Jiaotong).ipynb) 和 [Demo of how to use SongCi](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/multi_modality_diagnosis.ipynb)
+* 18/02/2025：我们展示了一位死者的法医病理尸检 WSI（可公开获取），以便您直观地了解法医病理 WSI 与临床肿瘤 WSI 之间的差异。如果您对法医病理学有浓厚的兴趣，欢迎您立即与我们联系，我们将提供更多真实的法医病例。
 ## 安装:
 
 **前提须知**:
