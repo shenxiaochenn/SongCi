@@ -23,6 +23,7 @@ The architecture consists of three main parts, i.e., an imaging encoder for WSI 
 * 26/01/2025：quick start use this vision-language model for forensic pathology diagnosis. [Demo of how to use SongCi](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/multi_modality_diagnosis.ipynb) And how to get the prototype embedding of a WSI. [Demo of how to get the prototype of each WSI](https://github.com/shenxiaochenn/SongCi/blob/master/prototype_encoder/songci_demo/how%20to%20get%20prototype%20csv.ipynb). (Note: For safety! please get the checkpoint through the [hugging face](https://huggingface.co/shenxiaochen/SongCi) !!!)
 * 04/02/2025：We show the forensic pathology diagnostic results for each sample in the internal cohort, as well as the final numerical assessment results.[Reproduced results of Internal Cohort](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/Demo_of_the_internal_cohort(Xian%20Jiaotong).ipynb) and [Demo of how to use SongCi](https://github.com/shenxiaochenn/SongCi/blob/master/cross-modal-decoder/fusion_demo/multi_modality_diagnosis.ipynb)
 * 18/02/2025： We show some [post-mortem WSIs of forensic pathology](https://drive.google.com/drive/folders/1fz7BMuUBH2L4U8Pk0jtyA50TavYef5Gx?usp=drive_link) of one deceased (public available) so that you can visualize the differences between forensic pathology WSIs and clinical oncology WSIs. If you have a strong interest in forensic pathology, we welcome you to contact us at once, and we will provide more real forensic cases(All data: 6-8TB).🤗🤗🤗
+* 24/07/2025：Warm congratulations! Our paper has been accepted by [Nature Communications](https://www.nature.com/articles/s41467-025-62060-x).
 
 
 ## Installation:
@@ -231,6 +232,20 @@ Examples: here we show the top 5 prototypes and top 5 words
 If you find SongCi useful for your your research and applications, please cite using this BibTeX:
 
 ```bibtex
+@article{SongCi,
+   author = {Shen, Chen and Lian, Chunfeng and Zhang, Wanqing and Wang, Fan and Zhang, Jianhua and Fan, Shuanliang and Wei, Xin and Wang, Gongji and Li, Kehan and Mu, Hongshu and Wu, Hao and Liang, Xinggong and Ma, Jianhua and Wang, Zhenyuan},
+   title = {Large-vocabulary forensic pathological analyses via prototypical cross-modal contrastive learning},
+   journal = {Nature Communications},
+   volume = {16},
+   number = {1},
+   pages = {6773},
+   ISSN = {2041-1723},
+   DOI = {10.1038/s41467-025-62060-x},
+   url = {https://doi.org/10.1038/s41467-025-62060-x},
+   year = {2025},
+   type = {Journal Article}
+}
+
 @misc{shen2024largevocabularyforensicpathologicalanalyses,
       title={Large-vocabulary forensic pathological analyses via prototypical cross-modal contrastive learning}, 
       author={Chen Shen and Chunfeng Lian and Wanqing Zhang and Fan Wang and Jianhua Zhang and Shuanliang Fan and Xin Wei and Gongji Wang and Kehan Li and Hongshu Mu and Hao Wu and Xinggong Liang and Jianhua Ma and Zhenyuan Wang},
